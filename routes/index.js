@@ -104,7 +104,7 @@ router.post('/sign-in', async function(req, res, next) {
 });
 
 /* Post Sign-in */
-router.post('/sign-up',async function(req, res, next) {
+router.post('/sign-up', async function(req, res, next) {
 
   // console.log(' /Sign-Up : result from the front -->',req.body)
 
@@ -124,7 +124,7 @@ router.post('/sign-up',async function(req, res, next) {
 
     //console.log(' /Sign-UP : We dont have a user with this email, so we need to save it')
 
-    var newUser = await new userModel ({
+    var newUser = new userModel ({
       name: req.body.signUpName, 
       firstName: req.body.signUpFirstName, 
       password: req.body.signUpPassword, 
