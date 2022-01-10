@@ -7,16 +7,11 @@ var options = {
   useUnifiedTopology: true
  };
 
- var identifiants = {
-   mdp: 'MOT DE PASSE',
-   identifiant: 'IDENTIFIANT',
-   nomCluster: 'CLUSTER'
- }
 
  
 
 // --------------------- BDD -----------------------------------------------------
-mongoose.connect(`mongodb+srv://${identifiants.identifiant}:${identifiants.mdp}@${identifiants.nomCluster}.mongodb.net/Ticketac?retryWrites=true`,
+mongoose.connect(`mongodb+srv://Conor:fvz%23k%40jVWkcrgE9@cluster0.ftzjl.mongodb.net/Ticketac?retryWrites=true&w=majority`,
    options,
    function(err) {
     if (err) {
